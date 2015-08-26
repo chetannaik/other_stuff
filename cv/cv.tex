@@ -1,0 +1,143 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[margin, 2pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+%\documentclass[margin, 2pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+
+%\usepackage[margin=0.8in]{geometry}
+\usepackage{helvet} % Default font is the helvetica postscript font
+%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
+\usepackage{enumitem}
+
+\setlength{\textwidth}{5.2in} % Text width of the document
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\moveleft.5\hoffset\centerline{\LARGE\bf Chetan Nagaraj Naik} % Your name at the top
+ 
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
+ 
+\moveleft.5\hoffset\centerline{350 Circle Rd., Stony Brook, NY 11790} % Your address
+\moveleft.5\hoffset\centerline{cnaik@cs.stonybrook.edu}%, (631) 974-8046}
+\moveleft.5\hoffset\centerline{(631) 974-8046}
+
+%----------------------------------------------------------------------------------------
+
+\begin{resume}
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE SECTION
+%----------------------------------------------------------------------------------------
+ 
+% \section{OBJECTIVE}  
+
+% A position in the field of computers with special interests in business applications programming, information processing, and management systems. 
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EDUCATION}
+
+{\sl Master of Science,} Computer Science \hfill Aug. 2014 $-$ May. 2016\\
+Stony Brook University, Stony Brook, NY. \hfill (expected)\\
+%Courses: Data Science, Data Mining meets Graph Mining, Computer Vision, Analysis of Algorithms.\\
+GPA: 3.48/4
+
+{\sl Bachelor of Engineering,} Electronics \& Communications \hfill Aug. 2007 $-$ Jun. 2011\\
+R. V. College of Engineering, Bangalore, India.\\
+CGPA: 8.67/10
+ 
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+ 
+\section{WORK EXPERIENCE}
+
+{\sl Research Assistant} \hfill Jan 2015 $-$ Present \\
+Natural Language Processing Lab, Stony Brook University
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+  \item Developing a question answering system that can recognize instances of processes. The system can automatically identify the key semantic roles and use them in an alignment framework to answer $4^{th}$ grade process recognition questions.
+\end{itemize}
+
+
+{\sl Analyst} \hfill July 2011 $-$ May 2014 \\
+Google India Pvt. Ltd., Hyderabad, India 
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+  \item Developed and launched a ad-click spam filter which addresses one of the most pressing click fraud problems.
+  		It  has an impact of around \$1 million a month.
+  \item Designed and developed metrics infrastructure for the global team of 50 analysts.
+  \item Developed a method based on Pearson correlation coefficient for histogram similarity search.
+  		This helps Google detect fraudulent publisher accounts and prevent millions of dollars worth of damages
+        to advertisers.
+%  \item Built a scalable system called `Watergate' that allows a consistent, streamlined, and collaborative process to
+%  		enable additional features for publishers. The automation from this system helps the team save 350 full
+%        time employee (FTE) hours per quarter.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	ACADEMIC PROJECTS SECTION
+%---------------------------------------------------------------------------------------- 
+
+\section{ACADEMIC PROJECTS}
+
+{\sl Question Answering System.} \hfill Feb. 2015 $-$ May. 2015
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+  \item Built a question answering system that uses alignment over semantic roles to answer and pass a 4th grade science exam. The model has an accuracy of 62.5%\%.
+\end{itemize}
+
+{\sl Predicting Super Bowl and College Football champions.} \hfill Aug. 2014 $-$ Dec. 2014
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+  \item Built machine learning models to predict the winners of 2015 Super Bowl and College Football Championship. The model has an accuracy of 63\%.
+\end{itemize}
+
+{\sl Predicting rating stars of Yelp reviews from review text.} \hfill Aug. 2014 $-$ Dec. 2014
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+	\item Built topic models using LDA and NMF along with sentiment layers to predict the review star rating from review text with 61\% accuracy.
+\end{itemize}
+
+{\sl Predicting facial beauty using CNN.} \hfill Aug. 2014 $-$ Dec. 2014
+
+\begin{itemize} \itemsep -2pt % Reduce space between items
+	\item Designed and trained a Convolutional Neural Network (CNN) using Caffe (a fast framework for deep learning) to predict facial beauty without using landmark features. This model has an accuracy of 51\%.
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{AWARDS} 
+%- Received 2 PQO Gold Awards at Google.\\
+%- Received Spot Bonus at Google for my work on histogram based similarity search.\\
+%- Received 10 peer bonuses for helping out peers by going above and beyond work requirements.\\
+\begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=*]
+  \item[--] Received 2 PQO Gold Awards at Google.
+  \item[--] Received Spot Bonus at Google for my work on histogram based similarity search.
+  \item[--] Received 10 Peer Bonuses for helping out peers by going above and beyond work requirements.
+\end{itemize}
+
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{COMPUTER \\ SKILLS} 
+
+{\sl Programming Languages:} 
+Python, C, C++, Java. \\
+{\sl Familiar with following technologies:} IPython, scikit-learn, MapReduce, Bigtable, Dremel, Tenzing, PowerDrill, ColumnIO, Protocol Buffers, Django, Matlab, HTML, CSS. 
+
+%----------------------------------------------------------------------------------------
+
+\end{resume}
+\end{document}
