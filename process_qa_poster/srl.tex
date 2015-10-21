@@ -1,0 +1,35 @@
+\documentclass{standalone}
+
+\usepackage{tikz-dependency}
+
+% The document proper.
+\begin{document}
+
+\depstyle{inner bubble}{draw=gray!80, minimum height=20pt, rounded corners=8pt,
+inner sep=2pt, top color=gray!40, bottom color=white}
+
+\depstyle{outer bubble}{draw=gray!80, minimum height=20pt, rounded corners=5pt,
+inner sep=2pt, top color=gray!5, bottom color=gray!25}
+
+\depstyle{ungrammatical}{edge above, edge style = {red!70!black},
+label style = {above, text=red!70!black}, text only label}
+
+\begin{dependency}[arc edge, edge vertical padding=-2pt, group style=outer bubble]
+
+\begin{deptext}[column sep=0.6em]
+Evaporation \& ... \& losing \& heat \& through \& the \& conversion \& of \& water \& to \& gas\\
+\end{deptext}
+
+\deproot{7}{TRIGGER}
+\wordgroup{1}{4}{4}{first}
+\wordgroup{1}{7}{7}{third}
+\wordgroup{1}{9}{9}{fourth}
+\wordgroup{1}{11}{11}{fifth}
+\groupedge[ungrammatical]{third}{fourth}{input}{.5cm}
+\groupedge[ungrammatical]{third}{fifth}{result}{.5cm}
+\groupedge[ungrammatical]{third}{first}{enabler}{.5cm}
+\end{dependency}%
+
+
+
+\end{document}
